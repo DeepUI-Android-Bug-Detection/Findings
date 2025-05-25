@@ -1,7 +1,7 @@
 # Combining Multi-Modal UI Understanding with LLMs for Android Non-Crash Bug Detection
 
 ## Table of Contents
-- [Introduction](#introduction)
+- [Overview](#Overview)
 - [Features](#features)
 - [Repository Structure](#repository-structure)
 - [Installation](#installation)
@@ -39,7 +39,7 @@ This approach leverages the power of multimodal analysis and LLMs to detect bugs
 - Contextual understanding through the fine-tuned **CLIP model** for accurate UI element description.
 - Uses **GPT-4** for reasoning about visual cues and user flows to predict potential bugs.
 
-  ## Directory Structure
+  ## Repository Structure
 
 ```plaintext
 /deepui-project
