@@ -35,10 +35,7 @@ We have curated a benchmark dataset of 150 Android UI scenarios (75 buggy, 75 no
 - GUI screenshots extracted from these videos
 - Detailed bug descriptions and reproduction steps
 
-You can download the dataset here:  
-[DeepUI Benchmark Dataset](https://drive.google.com/drive/folders/1247QANbLqh0VrlEofxTjlBrKeeAQEDXU?usp=drive_link)
-
-
+You can download the dataset here: [DeepUI Benchmark Dataset](https://drive.google.com/drive/folders/1247QANbLqh0VrlEofxTjlBrKeeAQEDXU?usp=drive_link)
 
 ## Installation
 
