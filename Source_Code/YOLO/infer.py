@@ -26,10 +26,10 @@ def run_inference(weights_path, image_dir, output_dir):
         if image_path.suffix.lower() in image_extensions and not image_path.name.startswith("._"):
             img = cv2.imread(str(image_path))
             if img is None:
-                print(f"⚠️ Skipping unreadable image: {image_path}")
+                print(f" Skipping unreadable image: {image_path}")
                 continue
 
-            print(f"✅ Running YOLO on: {image_path}")
+            print(f" Running YOLO on: {image_path}")
             results = model(str(image_path))
             r = results[0]
 
