@@ -1,5 +1,14 @@
 # Combining Multi-Modal UI Understanding with LLMs for Android Non-Crash Bug Detection
 
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Repository Structure](#repository-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Evaluation](#evaluation)
+- [Citation](#citation)
 DeepUI is a novel approach for detecting non-crash bugs in Android applications by combining **multi-modal UI understanding** with **large language models** (LLMs) like GPT-4. This framework utilizes UI screenshots and user interactions to identify subtle bugs that are challenging for traditional bug detection tools.
 
 ## Overview
