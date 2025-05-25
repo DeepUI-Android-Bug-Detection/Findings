@@ -16,7 +16,7 @@ The process involves the following steps:
 - OpenCV
 - NumPy
 - LabelImg (for creating XML annotations, if you don't already have them)
-- Other dependencies specified in `requirements.txt`
+
 
 ## Step 1: Convert XML Annotations to YOLO Format
 
