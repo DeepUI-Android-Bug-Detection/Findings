@@ -26,3 +26,20 @@ The first step is to convert XML annotations (e.g., from LabelImg) into the YOLO
 
 ```bash
 python processing.py --xml_dir <path_to_xml_annotations> --output_dir <path_to_yolo_format_output>
+```
+## Step 2: Train the YOLO Model
+After converting the XML annotations to YOLO format, the next step is to train the YOLO model using the prepared data.
+
+### Usage:
+
+```bash
+python train.py --data <path_to_yolo_data_yaml> --cfg <path_to_yolo_model_cfg> --weights yolov8.pt --batch-size 16 --epochs 50
+```
+## Step 3: Detect UI Widgets in New Screenshots
+Once the model is trained, you can use it to detect UI widgets in new screenshots.
+
+### Usage:
+
+```bash
+python detect.py --weights <path_to_trained_model_weights> --source <path_to_screenshot_directory> --output <path_to_output_directory>
+```
