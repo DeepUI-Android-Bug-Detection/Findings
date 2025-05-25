@@ -4,6 +4,10 @@ DeepUI is a novel approach for detecting non-crash bugs in Android applications 
 
 ## Overview
 
+
+![DeepUI Overview](./assets/deepui_overview.png)
+
+
 DeepUI employs a two-stage pipeline to automatically and accurately detect non-crash bugs in Android apps:
 
 1. **Multi-Modal UI Understanding:** 
@@ -25,7 +29,6 @@ This approach leverages the power of multimodal analysis and LLMs to detect bugs
 - **PaddleOCR** for robust optical character recognition (OCR) on text within UIs.
 - Contextual understanding through the fine-tuned **CLIP model** for accurate UI element description.
 - Uses **GPT-4** for reasoning about visual cues and user flows to predict potential bugs.
-- **Human-readable bug reports** with detailed explanations of detected issues.
 
 ## Dataset
 
@@ -33,7 +36,7 @@ We have curated a benchmark dataset of 150 Android UI scenarios (75 buggy, 75 no
 
 - Video recordings of test case executions
 - GUI screenshots extracted from these videos
-- Detailed bug descriptions and reproduction steps
+
 
 You can download the dataset here: [DeepUI Benchmark Dataset](https://drive.google.com/drive/folders/1247QANbLqh0VrlEofxTjlBrKeeAQEDXU?usp=drive_link)
 
