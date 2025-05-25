@@ -4,8 +4,9 @@ DeepUI is a novel approach for detecting non-crash bugs in Android applications 
 
 ## Overview
 
+### Overview Diagram
+![DeepUI Overview](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/overview.png?raw=true)
 
-![DeepUI Overview](./assets/deepui_overview.png)
 
 
 DeepUI employs a two-stage pipeline to automatically and accurately detect non-crash bugs in Android apps:
