@@ -33,7 +33,7 @@ After converting the XML annotations to YOLO format, the next step is to train t
 ### Usage:
 
 ```bash
-python train.py --data <path_to_yolo_data_yaml> --cfg <path_to_yolo_model_cfg> --weights yolov8.pt --batch-size 16 --epochs 50
+python train.py --data <path_to_yolo_data_yaml> --cfg <path_to_yolo_model_cfg> --weights yolov8.pt --batch-size 16 --epochs 300
 ```
 ## Step 3: Detect UI Widgets in New Screenshots
 Once the model is trained, you can use it to detect UI widgets in new screenshots.
@@ -41,5 +41,5 @@ Once the model is trained, you can use it to detect UI widgets in new screenshot
 ### Usage:
 
 ```bash
-python detect.py --weights <path_to_trained_model_weights> --source <path_to_screenshot_directory> --output <path_to_output_directory>
+python infer.py --weights <path_to_trained_model_weights> --source <path_to_screenshot_directory> --output <path_to_output_directory>
 ```
