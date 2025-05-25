@@ -67,9 +67,6 @@ deepui-project/
 ├── README.md # This file
 └── requirements.txt # Python dependencies
 
-yaml
-Copy
-Edit
 
 
 ## Dataset
