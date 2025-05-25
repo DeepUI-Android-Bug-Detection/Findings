@@ -4,7 +4,6 @@ DeepUI is a novel approach for detecting non-crash bugs in Android applications 
 
 ## Overview
 
-### Overview Diagram
 ![DeepUI Overview](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/overview.png?raw=true)
 
 
@@ -19,17 +18,31 @@ DeepUI employs a two-stage pipeline to automatically and accurately detect non-c
 2. **LLM-based Bug Detection:**
    - Construct context-rich prompts incorporating the UI state and user actions.
    - Feed these prompts to **GPT-4** for reasoning about app functionality and identifying potential bugs.
-   - Generate human-readable explanations and bug reports.
+   - Generate human-readable explanations.
 
 This approach leverages the power of multimodal analysis and LLMs to detect bugs that are difficult to identify with conventional tools.
 
 ## Features
 
-- Detects **non-crash bugs** in Android applications without requiring source code or instrumentation.
+- Detects **non-crash bugs** in Android applications.
 - Uses **YOLOv8** for real-time widget detection in screenshots.
 - **PaddleOCR** for robust optical character recognition (OCR) on text within UIs.
 - Contextual understanding through the fine-tuned **CLIP model** for accurate UI element description.
 - Uses **GPT-4** for reasoning about visual cues and user flows to predict potential bugs.
+
+  ## Directory Structure
+
+```plaintext
+/deepui-project
+├── assets/
+│   └── deepui_overview.png   # Your diagram image
+├── code/
+│   ├── fine_tune_clip_model.py
+│   ├── clip_rico_matching.py
+│   └── clip_inference.py
+├── data/
+├── model/
+└── README.md
 
 ## Dataset
 
