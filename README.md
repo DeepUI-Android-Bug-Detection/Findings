@@ -29,6 +29,16 @@ This approach leverages the power of multimodal analysis and LLMs to detect bugs
 
 ## Dataset
 
+We have curated a benchmark dataset of 150 Android UI scenarios (75 buggy, 75 non-buggy), reproduced from real-world GitHub issues. The dataset includes:
+
+- Video recordings of test case executions
+- GUI screenshots extracted from these videos
+- Detailed bug descriptions and reproduction steps
+
+You can download the dataset here:  
+[DeepUI Benchmark Dataset](https://drive.google.com/drive/folders/1247QANbLqh0VrlEofxTjlBrKeeAQEDXU?usp=drive_link)
+
+
 
 ## Installation
 
