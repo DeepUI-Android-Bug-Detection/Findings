@@ -9,13 +9,13 @@
 - [Dataset](#dataset)
 - [Evaluation](#evaluation)
 - [Citation](#citation)
-DeepUI is a novel approach for detecting non-crash bugs in Android applications by combining **multi-modal UI understanding** with **large language models** (LLMs) like GPT-4. This framework utilizes UI screenshots and user interactions to identify subtle bugs that are challenging for traditional bug detection tools.
+
 
 ## Overview
 
 ![DeepUI Overview](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/overview.png?raw=true)
 
-
+DeepUI is a novel approach for detecting non-crash bugs in Android applications by combining **multi-modal UI understanding** with **large language models** (LLMs) like GPT-4. This framework utilizes UI screenshots and user interactions to identify subtle bugs that are challenging for traditional bug detection tools.
 
 DeepUI employs a two-stage pipeline to automatically and accurately detect non-crash bugs in Android apps:
 
@@ -44,6 +44,8 @@ This approach leverages the power of multimodal analysis and LLMs to detect bugs
 ```plaintext
 deepui-project/
 │
+├── Dataset/                              # Dataset used for evaluation
+│   ├── Videos.txt                        # List of videos and images for dataset creation
 ├── Source_Code/ # Main source code for the project
 │ ├── CLIP/ # Fine-tune and inference scripts
 │ │ ├── fine_tune_clip.py # Fine-tune CLIP model
@@ -60,30 +62,8 @@ deepui-project/
 │ ├── infer.py # Inference script for YOLO
 │ ├── processing.py # YOLO annotation processing
 │ └── readme.md # Documentation for YOLO code
-├── Dataset/ # Dataset used for model training and evaluation
-│ ├── Videos.txt # List of training videos
-│ └── ...
 ├── overview.png # Diagram of the approach
 ├── README.md # This file
 └── requirements.txt # Python dependencies
 
 
-
-## Dataset
-
-We have curated a benchmark dataset of 150 Android UI scenarios (75 buggy, 75 non-buggy), reproduced from real-world GitHub issues. The dataset includes:
-
-- Video recordings of test case executions
-- GUI screenshots extracted from these videos
-
-
-You can download the dataset here: [DeepUI Benchmark Dataset](https://drive.google.com/drive/folders/1247QANbLqh0VrlEofxTjlBrKeeAQEDXU?usp=drive_link)
-
-## Execution
-
-## Running the Classifier Performance Evaluation
-
-To evaluate the performance of the classifier on the dataset, use the following command in your terminal:
-
-```bash
-python Yolo.py --datasets_dir <path_to_your_datasets_folder> --output_dir <path_to_output_directory>
