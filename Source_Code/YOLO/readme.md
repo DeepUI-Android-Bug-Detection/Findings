@@ -5,9 +5,13 @@ This section of the repository describes how to prepare, train, and use the YOLO
 ## Overview
 
 The process involves the following steps:
+
 1. **Convert XML Annotations to YOLO Format**: Use `processing.py` to convert XML annotations (e.g., from LabelImg) to YOLO-friendly format.
-2. **Train YOLO Model**: Use the converted data to train a YOLO model for detecting UI widgets in screenshots.
+2. **Train YOLO Model**: Train a YOLOv8 model on the **VINS dataset** for detecting UI widgets in screenshots.
 3. **Detect UI Widgets with the Trained YOLO Model**: Feed new screenshots into the trained YOLO model to detect UI components.
+
+The YOLOv8 model was trained using the **VINS dataset**, which contains images of Android UI screenshots annotated with bounding boxes for various UI components. This dataset helps train the model to recognize and detect these components in new, unseen images.
+
 
 ## Requirements
 
