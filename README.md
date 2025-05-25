@@ -42,16 +42,35 @@ This approach leverages the power of multimodal analysis and LLMs to detect bugs
   ## Repository Structure
 
 ```plaintext
-/deepui-project
-├── assets/
-│   └── deepui_overview.png   # Your diagram image
-├── code/
-│   ├── fine_tune_clip_model.py
-│   ├── clip_rico_matching.py
-│   └── clip_inference.py
-├── data/
-├── model/
-└── README.md
+deepui-project/
+│
+├── Source_Code/ # Main source code for the project
+│ ├── CLIP/ # Fine-tune and inference scripts
+│ │ ├── fine_tune_clip.py # Fine-tune CLIP model
+│ │ ├── clip_matching.py # Matching widgets with RICO captions using CLIP
+│ │ ├── clip_inference.py# Perform inference using fine-tuned CLIP
+│ │ └── readme.md # Documentation for CLIP-based code
+│ ├── OCR/ # OCR text extraction scripts
+│ │ ├── ocr_script.py # OCR processing and widget matching
+│ │ └── readme.md # Documentation for OCR code
+│ ├── Proximity_matching/ # Proximity matching for OCR and widget bounding boxes
+│ │ ├── proximity_matching.py # Match OCR text to detected widgets
+│ │ └── readme.md # Documentation for proximity matching code
+│ └── YOLO/ # YOLO object detection for UI widgets
+│ ├── infer.py # Inference script for YOLO
+│ ├── processing.py # YOLO annotation processing
+│ └── readme.md # Documentation for YOLO code
+├── Dataset/ # Dataset used for model training and evaluation
+│ ├── Videos.txt # List of training videos
+│ └── ...
+├── overview.png # Diagram of the approach
+├── README.md # This file
+└── requirements.txt # Python dependencies
+
+yaml
+Copy
+Edit
+
 
 ## Dataset
 
