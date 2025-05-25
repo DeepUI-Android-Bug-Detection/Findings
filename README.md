@@ -37,12 +37,11 @@ We have curated a benchmark dataset of 150 Android UI scenarios (75 buggy, 75 no
 
 You can download the dataset here: [DeepUI Benchmark Dataset](https://drive.google.com/drive/folders/1247QANbLqh0VrlEofxTjlBrKeeAQEDXU?usp=drive_link)
 
-## Installation
+## Execution
 
-To install DeepUI and run it on your local machine, follow these steps:
+## Running the Classifier Performance Evaluation
 
-1. Clone the repository:
+To evaluate the performance of the classifier on the dataset, use the following command in your terminal:
 
-   ```bash
-   git clone https://github.com/your-username/deepui.git
-   cd deepui
+```bash
+python Yolo.py --datasets_dir <path_to_your_datasets_folder> --output_dir <path_to_output_directory>
