@@ -41,9 +41,16 @@ This approach leverages the power of multimodal analysis and LLMs to detect bugs
 
   ## Directory Structure
 
-![DeepUI Overview](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/overview.png?raw=true)
+This section provides an overview of the repository structure, including datasets and the source code for the DeepUI Android Non-Crash Bug Detection framework. 
+- **[Dataset](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Dataset)**: Contains the dataset used for training and evaluation.
+- **[CLIP](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/CLIP)**: Contains source code related to the CLIP model, including fine-tuning and inference scripts.
+- **[OCR](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/OCR)**: Contains the Optical Character Recognition code to extract text from UI screenshots.
+- **[YOLO](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/YOLO)**: Contains YOLO-based code for detecting UI elements in screenshots.
+- **[Proximity_matching](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/Proximity_matching)**: Contains code for matching OCR text to detected UI elements using proximity-based methods.
 
-DeepUI is a novel approach for detecting non-crash bugs in Android applications by combining **multi-modal UI understanding** with **large language models** (LLMs) like GPT-4. This framework utilizes UI screenshots and user interactions to identify subtle bugs that are challenging for traditional bug detection tools.
+![Directories Structure Diagram](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/directories.PNG?raw=true)
+
+
 
   ## Folder Structure
 
