@@ -3,7 +3,8 @@
 ## Table of Contents
 - [Overview](#Overview)
 - [Features](#features)
-- [Repository Structure](#repository-structure)
+- [Directory Structure](#directory-structure)
+- [Folder Structure](#folder-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dataset](#dataset)
