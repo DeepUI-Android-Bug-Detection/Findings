@@ -39,6 +39,12 @@ This approach leverages the power of multimodal analysis and LLMs to detect bugs
 - Contextual understanding through the fine-tuned **CLIP model** for accurate UI element description.
 - Uses **GPT-4** for reasoning about visual cues and user flows to predict potential bugs.
 
+  ## Directory Structure
+
+![DeepUI Overview](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/overview.png?raw=true)
+
+DeepUI is a novel approach for detecting non-crash bugs in Android applications by combining **multi-modal UI understanding** with **large language models** (LLMs) like GPT-4. This framework utilizes UI screenshots and user interactions to identify subtle bugs that are challenging for traditional bug detection tools.
+
   ## Folder Structure
 
 ```plaintext
