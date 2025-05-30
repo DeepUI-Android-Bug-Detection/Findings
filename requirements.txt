@@ -1,0 +1,11 @@
+python>=3.7
+torch
+transformers
+open_clip_torch
+scikit-learn
+Pillow
+opencv-python
+numpy
+paddlepaddle
+paddleocr
+
