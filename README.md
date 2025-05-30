@@ -1,15 +1,11 @@
 # Combining Multi-Modal UI Understanding with LLMs for Android Non-Crash Bug Detection
 
 ## Table of Contents
-- [Overview](#Overview)
+- [Overview](#overview)
 - [Features](#features)
 - [Directory Structure](#directory-structure)
+- [Dataset for Android Non-Crash Bug Detection](#dataset-for-android-non-crash-bug-detection)
 - [Folder Structure](#folder-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dataset](#dataset)
-- [Evaluation](#evaluation)
-- [Citation](#citation)
 
 
 ## Overview
@@ -24,12 +20,7 @@ DeepUI employs a two-stage pipeline to automatically and accurately detect non-c
    - Use advanced models like **YOLOv8** for widget detection, **PaddleOCR** for text extraction, and **CLIP** for contextual understanding of UI components.
    - Convert UI data into natural language descriptions.
 
-2. **LLM-based Bug Detection:**
-   - Construct context-rich prompts incorporating the UI state and user actions.
-   - Feed these prompts to **GPT-4** for reasoning about app functionality and identifying potential bugs.
-   - Generate human-readable explanations.
-
-This approach leverages the power of multimodal analysis and LLMs to detect bugs that are difficult to identify with conventional tools.
+This repository contains the code, datasets, and resources for the research paper "Combining Multi-Modal UI Understanding with LLMs for Android Non-Crash Bug Detection". The proposed method is used to detect on-crash bugs in Android applications. 
 
 ## Features
 
@@ -52,13 +43,81 @@ This section provides an overview of the repository structure, including dataset
 
 
 
+  ## Dataset for Android Non-Crash Bug Detection
+
+This folder contains all the datasets used for evaluation of the approach in the paper "Combining Multi-Modal UI Understanding with LLMs for Android Non-Crash Bug Detection." The dataset is organized into two main parts: Videos dataset containing the reproduction videos and GUI images dataset.
+
+
+This dataset is used to evaluate the DeepUI system. It includes real-world Android app bug reproduction scenarios.
+
+Videos Dataset
+Contains screen-recorded videos of actual app usage where non-crash bugs occur.
+
+These videos are used to extract frames for widget detection and UI analysis.
+
+Images Dataset
+Contains annotated UI screenshots extracted from the videos.
+
+Screenshots are used by YOLOv8, PaddleOCR, and CLIP for multi-modal analysis.
+
+
+
+
+
+Main directory containing dataset of reproduction videos and images.
+```plaintext
+Dataset/
+├── 📁 Videos Dataset # Contains video files of the bug reproduction. 
+│ ├── app.webm/ 
+├── 📁Images Dataset #Contains image files of the bug reproduction.
+ ├── bug.png
+
+
+```
+
+## Download Dataset
+Due to size limits, the dataset has been uploaded to Google Drive. You can download the dataset using the following link:
+
+[Download Videos Dataset](https://drive.google.com/drive/folders/1247QANbLqh0VrlEofxTjlBrKeeAQEDXU?usp=sharing)
+[Download Images Dataset](https://drive.google.com/drive/folders/10clpqxQglLLjwcLrNwlk0Cz5_RpDYHcU?usp=sharing)
+
+
+#  Usage Instructions
+
+This guide describes how to use the Images Dataset in the DeepUI pipeline for detecting non-crash bugs in Android apps.
+
+##  Steps
+
+1. **Widget Detection with YOLOv8**
+   - Use the `Images Dataset` as input to the YOLOv8 model.
+   - YOLOv8 will detect UI widgets such as buttons, input fields, sliders, etc.
+
+2. **Text Extraction with PaddleOCR**
+   - Run PaddleOCR on the same images to extract visible text from UI components.
+   - Captures labels, tooltips, error messages, and other textual information.
+
+3. **Contextual Understanding with CLIP**
+   - Combine the outputs of YOLO (bounding boxes) and OCR (text) and pass them into the CLIP model.
+   - CLIP generates contextual embeddings that associate UI elements with their textual labels and layout.
+
+4. **Bug Detection with GPT-4**
+   - Feed the generated textual representation into GPT-4.
+   - GPT-4 performs reasoning on the interface to detect logical and UI-related bugs (non-crash issues).
+
+## Dataset Role
+
+These datasets are an integral part of the **DeepUI** pipeline, which fuses **vision**, **text**, and **reasoning** to support **non-crash bug detection** in Android applications.
+
+
+
   ## Folder Structure
 
 ```plaintext
-deepui-project/
-│
-├── Dataset/                              # Dataset used for evaluation
-│   ├── Videos.txt                        # List of videos and images for dataset creation
+Dataset/
+├── 📁 Videos Dataset # Contains video files of the bug reproduction. 
+│ ├── app.webm/ 
+├── 📁Images Dataset #Contains image files of the bug reproduction.
+ ├── bug.png                      # List of videos and images for dataset creation
 ├── Source_Code/ # Main source code for the project
 │ ├── CLIP/ # Fine-tune and inference scripts
 │ │ ├── fine_tune_clip.py # Fine-tune CLIP model
