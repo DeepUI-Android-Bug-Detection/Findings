@@ -14,8 +14,7 @@
 
 ## Overview
 
-![DeepUI Overview](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Overview.png?raw=true)
-
+![DeepUI Overview](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Overview.PNG?raw=true)
 DeepUI is a novel approach for detecting non-crash bugs in Android applications by combining **multi-modal UI understanding** with **large language models** (LLMs) like GPT-4. This framework utilizes UI screenshots and user interactions to identify subtle bugs that are challenging for traditional bug detection tools.
 
 DeepUI employs a two-stage pipeline to automatically and accurately detect non-crash bugs in Android apps:
