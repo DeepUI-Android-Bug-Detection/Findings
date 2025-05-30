@@ -5,6 +5,9 @@
 - [Features](#features)
 - [Directory Structure](#directory-structure)
 - [Dataset for Android Non-Crash Bug Detection](#dataset-for-android-non-crash-bug-detection)
+- [Download Dataset](#download-dataset)
+- [Usage Instructions](#usage-instructions)
+- [Installation](#installation)
 - [Folder Structure](#folder-structure)
 
 
@@ -19,6 +22,9 @@ DeepUI employs a two-stage pipeline to automatically and accurately detect non-c
    - Capture screenshots from the app's UI through test case execution.
    - Use advanced models like **YOLOv8** for widget detection, **PaddleOCR** for text extraction, and **CLIP** for contextual understanding of UI components.
    - Convert UI data into natural language descriptions.
+  
+2. **GPT-4 Detection**
+   - Feed the generated textual representation into GPT-4.
 
 This repository contains the code, datasets, and resources for the research paper "Combining Multi-Modal UI Understanding with LLMs for Android Non-Crash Bug Detection". The proposed method is used to detect on-crash bugs in Android applications. 
 
@@ -82,7 +88,7 @@ Due to size limits, the dataset has been uploaded to Google Drive. You can downl
 [Download Images Dataset](https://drive.google.com/drive/folders/10clpqxQglLLjwcLrNwlk0Cz5_RpDYHcU?usp=sharing)
 
 
-#  Usage Instructions
+##  Usage Instructions
 
 This guide describes how to use the Images Dataset in the DeepUI pipeline for detecting non-crash bugs in Android apps.
 
@@ -95,12 +101,15 @@ This guide describes how to use the Images Dataset in the DeepUI pipeline for de
 2. **Text Extraction with PaddleOCR**
    - Run PaddleOCR on the same images to extract visible text from UI components.
    - Captures labels, tooltips, error messages, and other textual information.
+     
+3. **Proximity Matching**
+   - Matches OCR text to widgets based on spatial layout
 
-3. **Contextual Understanding with CLIP**
+4. **Contextual Understanding with CLIP**
    - Combine the outputs of YOLO (bounding boxes) and OCR (text) and pass them into the CLIP model.
    - CLIP generates contextual embeddings that associate UI elements with their textual labels and layout.
 
-4. **Bug Detection with GPT-4**
+5. **Bug Detection with GPT-4**
    - Feed the generated textual representation into GPT-4.
    - GPT-4 performs reasoning on the interface to detect logical and UI-related bugs (non-crash issues).
 
@@ -109,7 +118,26 @@ This guide describes how to use the Images Dataset in the DeepUI pipeline for de
 These datasets are an integral part of the **DeepUI** pipeline, which fuses **vision**, **text**, and **reasoning** to support **non-crash bug detection** in Android applications.
 
 
+## Installation
 
+Follow these steps to set up the environment for running the **DeepUI** pipeline.
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/DeepUI-Android-Bug-Detection/DeepUI.git
+cd DeepUI
+```
+## 2. Create a Virtual Environment and Install Dependencies
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+### 2. Install the Required Packages
+```bash
+
+pip install -r requirements.txt
+```
   ## Folder Structure
 
 ```plaintext
