@@ -8,4 +8,4 @@ opencv-python
 numpy
 paddlepaddle
 paddleocr
-
+openai
