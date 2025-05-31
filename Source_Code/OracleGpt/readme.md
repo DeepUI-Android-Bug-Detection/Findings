@@ -16,6 +16,7 @@ The project is organized into the following modules, with a clear separation of 
 ├──  main.py # Coordinates input prompts, model inference, and output storage 
 ├── text_processing.py # Generates outputs from prompts using the ChatGPT-4 model
 ├── prompt_template.py # Builds semantically rich prompts from widget, OCR, and proximity matching
+├── readme.md # this file
 ```
 
 ## Setup Instructions
