@@ -9,3 +9,4 @@ numpy
 paddlepaddle
 paddleocr
 openai
+pandas
