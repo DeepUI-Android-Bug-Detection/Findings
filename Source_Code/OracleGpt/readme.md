@@ -10,11 +10,13 @@
 ## Project Structure
 
 The project is organized into the following modules, with a clear separation of responsibilities:
-
+```plaintext
+├── OracleGpt/
 ├── chatgpt4_config.py # Sets up the OpenAI API client and handles prompt-to-response interaction with ChatGPT-4
 ├──  main.py # Coordinates input prompts, model inference, and output storage 
 ├── text_processing.py # Generates outputs from prompts using the ChatGPT-4 model
 ├── prompt_template.py # Builds semantically rich prompts from widget, OCR, and proximity matching
+```
 
 ## Setup Instructions
 
