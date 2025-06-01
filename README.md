@@ -43,7 +43,7 @@ This section provides an overview of the repository structure, including dataset
 - **[CLIP](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/CLIP)**: Contains source code related to the CLIP model, including fine-tuning and inference scripts.
 - **[OCR](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/OCR)**: Contains the Optical Character Recognition code to extract text from UI screenshots.
 - **[YOLO](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/YOLO)**: Contains YOLO-based code for detecting UI elements in screenshots.
-- **[OracleGpt]**
+- **[OracleGpt](https://github.com/DeepUI-Android-Bug-Detection/Findings/tree/main/Source_Code/OracleGpt)**: Contains Oracle code for detection of the bugs.
 - **[Proximity_matching](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/Proximity_matching)**: Contains code for matching OCR text to detected UI elements using proximity-based methods.
 
 ![Directories Structure Diagram](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/directories.png?raw=true)
@@ -156,6 +156,12 @@ Dataset/
 │ ├── OCR/ # OCR text extraction scripts
 │ │ ├── ocr_script.py # OCR processing and widget matching
 │ │ └── readme.md # Documentation for OCR code
+│ ├── OracleGpt/ # bug detection scripts
+│ │ ├── chatgpt4_config.py # OCR processing and widget matching
+│ │ └── main.py # Documentation for OCR code
+│ │ ├── prompt_template.py # OCR processing and widget matching
+│ │ ├── textprocessing.py
+│ │ └── readme.md # Documentation for oracle code
 │ ├── Proximity_matching/ # Proximity matching for OCR and widget bounding boxes
 │ │ ├── proximity_matching.py # Match OCR text to detected widgets
 │ │ └── readme.md # Documentation for proximity matching code
