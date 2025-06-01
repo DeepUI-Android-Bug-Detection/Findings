@@ -134,7 +134,7 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-## 2. Install the Required Packages
+## 3. Install the Required Packages
 ```bash
 
 pip install -r requirements.txt
