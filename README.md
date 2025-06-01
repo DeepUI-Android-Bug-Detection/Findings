@@ -43,9 +43,10 @@ This section provides an overview of the repository structure, including dataset
 - **[CLIP](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/CLIP)**: Contains source code related to the CLIP model, including fine-tuning and inference scripts.
 - **[OCR](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/OCR)**: Contains the Optical Character Recognition code to extract text from UI screenshots.
 - **[YOLO](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/YOLO)**: Contains YOLO-based code for detecting UI elements in screenshots.
+- **[OracleGpt]**
 - **[Proximity_matching](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/Source_Code/Proximity_matching)**: Contains code for matching OCR text to detected UI elements using proximity-based methods.
 
-![Directories Structure Diagram](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/directories.PNG?raw=true)
+![Directories Structure Diagram](https://github.com/DeepUI-Android-Bug-Detection/Findings/blob/main/directories.png?raw=true)
 
 
 
