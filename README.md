@@ -157,11 +157,11 @@ Dataset/
 │ │ ├── ocr_script.py # OCR processing and widget matching
 │ │ └── readme.md # Documentation for OCR code
 │ ├── OracleGpt/ # bug detection scripts
-│ │ ├── chatgpt4_config.py # OCR processing and widget matching
-│ │ └── main.py # Documentation for OCR code
-│ │ ├── prompt_template.py # OCR processing and widget matching
-│ │ ├── textprocessing.py
-│ │ └── readme.md # Documentation for oracle code
+│ │ ├── chatgpt4_config.py # Sets up the OpenAI API client and handles prompt-to-response interaction with ChatGPT-4
+│ │ └── main.py # Coordinates input prompts, model inference, and output storage 
+│ │ ├── prompt_template.py # Builds semantically rich prompts from widget, OCR, and proximity matching
+│ │ ├── textprocessing.py# Generates outputs from prompts using the ChatGPT-4 model
+│ │ └── readme.md # Documentation for Oracle code
 │ ├── Proximity_matching/ # Proximity matching for OCR and widget bounding boxes
 │ │ ├── proximity_matching.py # Match OCR text to detected widgets
 │ │ └── readme.md # Documentation for proximity matching code
