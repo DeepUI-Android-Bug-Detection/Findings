@@ -122,7 +122,7 @@ These datasets are an integral part of the **DeepUI** pipeline, which fuses **vi
 
 Follow these steps to set up the environment for running the **DeepUI** pipeline.
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 ```bash
 git clone https://github.com/DeepUI-Android-Bug-Detection/DeepUI.git
 cd DeepUI
@@ -133,7 +133,7 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-### 2. Install the Required Packages
+## 2. Install the Required Packages
 ```bash
 
 pip install -r requirements.txt
