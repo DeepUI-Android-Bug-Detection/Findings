@@ -78,7 +78,7 @@ Dataset/
 │ ├── app.webm/ 
 ├── 📁Images Dataset #Contains image files of the bug reproduction.
  ├── bug.png
-
+├── 📁 Prompts template # Contains sample prompts.
 
 ```
 
